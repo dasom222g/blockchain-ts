@@ -3,7 +3,7 @@ const username = 'dasomi',
   gender = 'Female'
 
 // const sayHi = (name: string, age: number, gender?: string): string => {
-//   return `Hi ${name}. You are ${age}. Your sex is ${gender || 'Male'}!!`
+//   return `Hi ${name}. You are ${age}. Your gender is ${gender || 'Male'}!!`
 // }
 // console.log(sayHi(username, age, gender))
 
@@ -28,7 +28,7 @@ const person = {
 const sayHi = (data: Human): string => {
   const { name, age, gender } = data
   console.log('double: ', data.double(age))
-  return `Hi ${name}. You are ${age}. Your sex is ${gender}!!`
+  return `Hi ${name}. You are ${age}. Your gender is ${gender}!!`
 }
 // console.log(sayHi(person))
 
@@ -46,7 +46,7 @@ class Human2 {
     this.gender = gender
   }
   public getInfo(): string {
-    return `Hi ${this.name}. You are ${this.age}. Your sex is ${this.gender}!!`
+    return `Hi ${this.name}. You are ${this.age}. Your gender is ${this.gender}!!`
   }
 }
 
