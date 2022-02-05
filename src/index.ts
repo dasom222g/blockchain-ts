@@ -51,5 +51,5 @@ class Human2 {
 }
 
 const dasom = new Human2("dasomi", 33, "Female")
-console.log(dasom.getInfo())
+// console.log(dasom)
 
