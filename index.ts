@@ -1,10 +1,10 @@
 const username = 'dasomi',
   age = 33,
-  general = 'Female'
+  gender = 'Female'
 
-const sayHi = (name: string, age: number, general: string) => {
-  console.log(`Hi ${name}. You are ${age}. Your sex is ${general}!!`)
+const sayHi = (name: string, age: number, gender?: string): string => {
+  return `Hi ${name}. You are ${age}. Your sex is ${gender || 'Male'}!!`
 }
-sayHi(username, age, general)
+console.log(sayHi(username, age, gender))
 
 // export { }

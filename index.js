@@ -1,7 +1,7 @@
-const username = 'dasomi', age = 33, general = 'Female';
-const sayHi = (name, age, general) => {
-    console.log(`Hi ${name}. You are ${age}. Your sex is ${general}!!`);
+const username = 'dasomi', age = 33, gender = 'Female';
+const sayHi = (name, age, gender) => {
+    return `Hi ${name}. You are ${age}. Your sex is ${gender || 'Male'}!!`;
 };
-sayHi(username, age, general);
+console.log(sayHi(username, age, 0));
 // export { }
 //# sourceMappingURL=index.js.map
