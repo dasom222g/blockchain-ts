@@ -6,7 +6,12 @@
   "author": "dasom <dasom228@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js",
-    "prestart": "tsc"
+    "start": "tsc-watch --onSuccess \" node dist/index.js\" "
+  },
+  "devDependencies": {
+    "tsc-watch": "^4.6.0"
+  },
+  "dependencies": {
+    "typescript": "^4.5.5"
   }
 }

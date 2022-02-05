@@ -5,6 +5,4 @@ const username = 'dasomi',
 const sayHi = (name: string, age: number, gender?: string): string => {
   return `Hi ${name}. You are ${age}. Your sex is ${gender || 'Male'}!!`
 }
-console.log(sayHi(username, age, gender))
-
-// export { }
+console.log(sayHi(username, age))
