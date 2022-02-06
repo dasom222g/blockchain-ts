@@ -45,11 +45,12 @@ class Human2 {
     this.age = age
     this.gender = gender
   }
-  public getInfo(): string {
-    return `Hi ${this.name}. You are ${this.age}. Your gender is ${this.gender}!!`
-  }
+  public getInfo = (): string => `Hi ${this.name}. You are ${this.age}. Your gender is ${this.gender}!!`
+  static getAgeDouble = (age: number): number => age * 2
+  static calc = (a: number, b: number): number => a * b
 }
 
 const dasom = new Human2("dasomi", 33, "Female")
-// console.log(dasom)
+console.log(dasom.getInfo())
+console.log(Human2.calc(2, 5))
 
