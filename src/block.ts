@@ -60,12 +60,11 @@ const createBlock = (data: string): Block => {
     newTimeStamp
   )
   addBlock(newBlock) // 블록추가
-
   return newBlock
 }
 
 const addBlock = (candidateBlock: Block): void => {
-  isValidBlock(candidateBlock, getLatestBlock()) && blockChain.push(candidateBlock)
+  blockChain = isValidBlock(candidateBlock, getLatestBlock()) ? [...blockChain, candidateBlock] : blockChain
 }
 
 const isValidBlock = (newBlock: Block, previousBlock: Block): boolean => {
@@ -95,11 +94,11 @@ const newBlock = new Block(
   Block.getHash(0, '', 'Dasomi block', getNewTimeStamp()),
   '',
   'Dasomi block',
-  1604615
+  1644137711
 )
 blockChain = [...blockChain, newBlock]
 createBlock('second Block')
 createBlock('third Block')
-createBlock('fourth Block')
+createBlock('fouth Block')
 
-console.log(blockChain)
+console.log('blockChain', blockChain)
