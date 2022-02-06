@@ -47,8 +47,3 @@ const newBlock = new Block(0, Block.getHash(0, "", "Dasomi block", getNewTimeSta
 blockChain = [newBlock]
 
 console.log(createBlock("kelly Block"))
-
-// const newBlock = new Block(0, '202020202020', '', 'Dasomi block', 1604615)
-// blockChain = [newBlock]
-
-// console.log(blockChain)
